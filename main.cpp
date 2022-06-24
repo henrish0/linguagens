@@ -1,18 +1,17 @@
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    char choice = '2';
-    while (choice != '0' && choice != '1')
+    int choice = -1;
+    while (choice != 0 && choice != 1)
     {
-        std::cout << "\n 0: CARTÃO 1: PIX\n Por favor, selecione um método de pagamento: ";
-        std::cin >> choice;
-        if (choice == '0')
-            std::cout << " Obrigado por selecionar cartão";
-        else if (choice == '1')
-            std::cout << " Obrigado por selecionar pix";
+        cout << "\n 0: CARTÃO 1: PIX\n Por favor, selecione um método de pagamento: ";
+        cin >> choice;
+        if (choice == 0)
+            cout << " Obrigado por selecionar cartão";
+        else if (choice == 1)
+            cout << " Obrigado por selecionar pix";
         else
-            std::cout << "\n Esta opção não existe\n";
+            cout << "\n Esta opção não existe\n";
     }
-    return 0;
 }

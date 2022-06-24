@@ -1,4 +1,5 @@
-main()
+#include <stdio.h>
+int main()
 {
     int choice = -1;
     while (choice != 0 && choice != 1)
